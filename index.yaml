@@ -1,0 +1,42 @@
+apiVersion: v1
+entries:
+  vault-instance:
+  - apiVersion: v1
+    appVersion: v1.0.0
+    created: "2021-03-06T15:29:39.671366701+08:00"
+    description: a chart for creating a Vault instance via the vault operator
+    digest: 02657650774c9c8d136f9f35bd6d0778a9e1aa99edbb88bf4df9d2ac660384ca
+    home: https://github.com/jenkins-x-charts/vault-instance
+    keywords:
+    - vault
+    name: vault-instance
+    sources:
+    - https://github.com/enkins-x-charts/vault-instance
+    urls:
+    - vault-instance-1.0.15.tgz
+    version: 1.0.15
+  vault-operator:
+  - apiVersion: v2
+    appVersion: 1.10.0
+    created: "2021-03-06T15:29:39.674849188+08:00"
+    dependencies:
+    - condition: etcd-operator.enabled
+      name: etcd-operator
+      repository: https://charts.helm.sh/stable
+      version: 0.11.0
+    description: A Helm chart for banzaicloud/bank-vaults Vault operator
+    digest: c1ffcdd28400e636023209c77d6c350a1f396449a19cefd63512386635163946
+    home: https://banzaicloud.com/products/bank-vaults/
+    maintainers:
+    - email: info@banzaicloud.com
+      name: Banzai Cloud
+    name: vault-operator
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/banzaicloud/bank-vaults
+    - https://github.com/banzaicloud/banzai-charts
+    type: application
+    urls:
+    - vault-operator-1.10.0.tgz
+    version: 1.10.0
+generated: "2021-03-06T15:29:39.670436331+08:00"
